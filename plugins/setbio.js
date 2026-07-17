@@ -29,7 +29,7 @@ async function fetchQuotes() {
         if (allQuotes.length === 0) {
             // Fallback quotes if fetch fails
             return [
-                '💎 By MEGA-MD - Your WhatsApp Bot',
+                '💎 By NOVAA-MD - Your WhatsApp Bot',
                 '🌟 Stay positive, work hard, make it happen.',
                 '✨ Believe in yourself and all that you are.',
                 '🚀 The future belongs to those who believe in the beauty of their dreams.',
@@ -44,12 +44,12 @@ async function fetchQuotes() {
         return allQuotes;
     }
     catch (error) {
-        return cachedQuotes.length > 0 ? cachedQuotes : ['💎 By MEGA-MD - Your WhatsApp Bot'];
+        return cachedQuotes.length > 0 ? cachedQuotes : ['💎 By NOVA-MD - Your WhatsApp Bot'];
     }
 }
 function getRandomQuote(quotes) {
     if (!quotes || quotes.length === 0)
-        return '💎 By MEGA-MD';
+        return '💎 By NOVA-MD';
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
 async function updateAutoBio(sock) {
@@ -188,7 +188,7 @@ export default {
                     await updateAutoBio(sock);
                 }
                 return await sock.sendMessage(chatId, {
-                    text: '✅ *Bio reset to default!*\n\n*Default bio:*\n{quote}\n💎 MEGA-MD'
+                    text: '✅ *Bio reset to default!*\n\n*Default bio:*\n{quote}\n💎 NOVA-MD'
                 }, { quoted: message });
             }
             return await sock.sendMessage(chatId, {
