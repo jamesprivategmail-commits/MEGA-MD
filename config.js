@@ -6,7 +6,7 @@ const config = {
     botOwner: process.env.BOT_OWNER || 'Qasim Ali',
     ownerNumber: process.env.OWNER_NUMBER || '923051391007',
     author: process.env.AUTHOR || 'GlobalTechInfo',
-    packname: process.env.PACKNAME || 'MEGA-MD',
+    packname: process.env.PACKNAME || 'NOVA-MD',
     description: process.env.DESCRIPTION || 'High performance multi-device WhatsApp bot',
     version: '6.0.0',
     // Bot Config
