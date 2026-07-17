@@ -2,8 +2,8 @@
  *                                                                           *
  *                     Developed By Qasim Ali                                *
  *                                                                           *
- *  🌐  GitHub   : https://github.com/GlobalTechInfo                         *
- *  ▶️  YouTube  : https://youtube.com/@GlobalTechInfo                       *
+ *  🌐  GitHub   : https://whatsapp.com/channel/0029VbDJE4mFy729upfVIu0Q                         *
+ *  ▶️  YouTube  : https://whatsapp.com/channel/0029VbDJE4mFy729upfVIu0Q                       *
  *  💬  WhatsApp : https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07     *
  *                                                                           *
  *    © 2026 GlobalTechInfo. All rights reserved.                            *
@@ -47,11 +47,11 @@ export default {
  *                                                                           *
  *                     Developed By Qasim Ali                                *
  *                                                                           *
- *  🌐  GitHub   : https://github.com/GlobalTechInfo                         *
- *  ▶️  YouTube  : https://youtube.com/@GlobalTechInfo                       *
- *  💬  WhatsApp : https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07     *
+ *  🌐  GitHub   : https://whatsapp.com/channel/0029VbDJE4mFy729upfVIu0Q                         *
+ *  ▶️  YouTube  : https://whatsapp.com/channel/0029VbDJE4mFy729upfVIu0Q                       *
+ *  💬  WhatsApp : https://whatsapp.com/channel/0029VbDJE4mFy729upfVIu0Q     *
  *                                                                           *
- *    © 2026 GlobalTechInfo. All rights reserved.                            *
+ *    © 2026 https://whatsapp.com/channel/0029VbDJE4mFy729upfVIu0Q. All rights reserved.                            *
  *                                                                           *
  *    Description: This file is part of the MEGA-MD Project.                 *
  *                 Unauthorized copying or distribution is prohibited.       *
