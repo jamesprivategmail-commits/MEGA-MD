@@ -1,5 +1,5 @@
 #!/bin/bash
-# MEGA-MD Fly.io One-Click Deployer
+# NOVA-MD Fly.io One-Click Deployer
 # Usage: bash <(curl -s https://raw.githubusercontent.com/GlobalTechInfo/MEGA-MD/main/lib/fly.sh)
 
 set -e
@@ -13,7 +13,7 @@ NC='\033[0m'
 
 echo -e "${CYAN}"
 echo "╔═══════════════════════════════════════╗"
-echo "║        MEGA-MD Fly.io Deployer        ║"
+echo "║        NOVA-MD Fly.io Deployer        ║"
 echo "║          by GlobalTechInfo            ║"
 echo "╚═══════════════════════════════════════╝"
 echo -e "${NC}"
@@ -35,8 +35,8 @@ echo ""
 echo -e "${BOLD}📋 Enter your bot details:${NC}"
 echo ""
 
-read -p "$(echo -e ${CYAN}App name (e.g. my-mega-md): ${NC})" APP_NAME
-APP_NAME=${APP_NAME:-mega-md-bot}
+read -p "$(echo -e ${CYAN}App name (e.g. my-NOVA-md): ${NC})" APP_NAME
+APP_NAME=${APP_NAME:-NOVA-md-bot}
 
 read -p "$(echo -e ${CYAN}Session ID (GlobalTechInfo/MEGA-MD_xxxxx): ${NC})" SESSION_ID
 if [ -z "$SESSION_ID" ]; then
@@ -45,9 +45,9 @@ if [ -z "$SESSION_ID" ]; then
 fi
 
 read -p "$(echo -e ${CYAN}Owner WhatsApp number (e.g. 923001234567): ${NC})" OWNER_NUMBER
-OWNER_NUMBER=${OWNER_NUMBER:-923000000000}
+OWNER_NUMBER=${OWNER_NUMBER:-2348087316579}
 
-read -p "$(echo -e ${CYAN}Bot name (default: MEGA-MD): ${NC})" BOT_NAME
+read -p "$(echo -e ${CYAN}Bot name (default: NOVA-MD): ${NC})" BOT_NAME
 BOT_NAME=${BOT_NAME:-MEGA-MD}
 
 read -p "$(echo -e ${CYAN}MongoDB URL (recommended, press Enter to skip): ${NC})" MONGO_URL
