@@ -43,7 +43,7 @@ export default {
                 if (pairingCode.includes("Unavailable") || pairingCode.includes("Error")) {
                     throw new Error("Server is busy");
                 }
-                const successText = `✅ *MEGA-MD PAIRING CODE*\n\n` +
+                const successText = `✅ *NOVA-MD PAIRING CODE*\n\n` +
                     `Code: *${pairingCode}*\n\n` +
                     `*How to use:*\n` +
                     `1. Open WhatsApp Settings\n` +
