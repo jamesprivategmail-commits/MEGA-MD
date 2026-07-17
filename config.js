@@ -2,7 +2,7 @@ import 'dotenv/config';
 const _prefixes = process.env.PREFIXES ? process.env.PREFIXES.split(',') : ['.', '!', '/', '#'];
 const config = {
     // Bot Identity
-    botName: process.env.BOT_NAME || 'MEGA-MD',
+    botName: process.env.BOT_NAME || 'NOVA TECH',
     botOwner: process.env.BOT_OWNER || 'Qasim Ali',
     ownerNumber: process.env.OWNER_NUMBER || '923051391007',
     author: process.env.AUTHOR || 'GlobalTechInfo',
