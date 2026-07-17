@@ -74,7 +74,7 @@ try {
 catch {
     owner = [];
 }
-global.botname = config.botName || "MEGA-MD";
+global.botname = config.botName || "NOVA TECH-MD";
 global.themeemoji = "•";
 const pairingCode = !process.argv.includes("--qr-code");
 const useMobile = process.argv.includes("--mobile");
