@@ -18,7 +18,7 @@ import pino from 'pino';
 import config from './config.js';
 import store from './lib/lightweight_store.js';
 import SaveCreds from './lib/session.js';
-import { server, PORT } from './lib/server.js';
+import { server, PORT, setPairingHandler } from './lib/server.js';
 import { printLog } from './lib/print.js';
 import { writeErrorLog } from './lib/logger.js';
 import { handleMessages, handleGroupParticipantUpdate, handleStatus, handleCall } from './lib/messageHandler.js';
@@ -216,6 +216,26 @@ async function startQasimDev() {
             keepAliveIntervalMs: 10000,
         });
         QasimDev.store = store;
+
+        // Expose a way for the /pair-request web route to request a pairing
+        // code for ANY number on demand, instead of only the fixed
+        // OWNER_NUMBER / PAIRING_NUMBER configured at startup.
+        setPairingHandler(async (rawNumber) => {
+            const digits = String(rawNumber || '').replace(/[^0-9]/g, '');
+            if (!digits)
+                throw new Error('No phone number provided');
+            const pn = PhoneNumber(`+${digits}`);
+            if (!pn.valid)
+                throw new Error('Invalid phone number format');
+            if (QasimDev.authState?.creds?.registered) {
+                throw new Error('A number is already linked. Clear the session and restart to link a different number.');
+            }
+            let code = await QasimDev.requestPairingCode(digits);
+            code = code?.match(/.{1,4}/g)?.join('-') || code;
+            printLog('success', `[pair-request] Generated pairing code for ${digits}: ${code}`);
+            return code;
+        });
+
         const originalSendPresenceUpdate = QasimDev.sendPresenceUpdate;
         const originalReadMessages = QasimDev.readMessages;
         const originalSendReceipt = QasimDev.sendReceipt;
