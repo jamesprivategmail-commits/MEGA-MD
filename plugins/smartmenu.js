@@ -64,9 +64,9 @@ export default {
             const disabledEmoji = getRandomEmoji(disabledEmojis);
             const fastEmoji = getRandomEmoji(fastEmojis);
             const slowEmoji = getRandomEmoji(slowEmojis);
-            let menuText = `${menuEmoji} *${config.botName || 'MEGA-MD'}* ${menuEmoji}\n\n`;
+            let menuText = `${menuEmoji} *${config.botName || 'NOVA-MD'}* ${menuEmoji}\n\n`;
             menuText += `┏━━━━━━━━━━━━━━━━┓\n`;
-            menuText += `┃ 📱 *Bot:* ${config.botName || 'MEGA-MD'}\n`;
+            menuText += `┃ 📱 *Bot:* ${config.botName || 'NOVA-MD'}\n`;
             menuText += `┃ 🔖 *Version:* ${config.version || '6.0.0'}\n`;
             menuText += `┃ 👤 *Owner:* ${config.botOwner || 'Unknown'}\n`;
             menuText += `┃ ⏰ *Time:* ${formatTime()}\n`;
